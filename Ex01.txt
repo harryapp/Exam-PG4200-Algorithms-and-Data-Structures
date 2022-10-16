@@ -1,0 +1,11 @@
+a) A regular expression that matches archives names correctly:
+pg4200.[0-9]{5}\.zip
+
+As a String in java = "pg4200.[0-9]{5}\\.zip"
+
+
+b) a regular expression that matches sentences that are about the course:
+
+[^.?!]*(?<=[.?\s!])(algorithms|algdat|pg4200)(?=[\s.?!])[^.?!]*[.?!]
+
+As a String in Java = "[^.?!]*(?<=[.?\\s!])(algorithms|algdat|pg4200)(?=[\\s.?!])[^.?!]*[.?!]"

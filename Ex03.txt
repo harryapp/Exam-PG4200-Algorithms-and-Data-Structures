@@ -1,0 +1,29 @@
+Compare your implementation of the StudentMap in Ex02 to an ArrayList,
+a BinaryTree, and a HashMap. Does your implementation always
+perform better than the others? If yes, explain why.
+If not, explain in which cases your implementation
+could perform worse. Consider for this comparison only the
+operations put, get, and delete, defined in the interface MyMap.
+
+
+
+What is the performance of the method “getByName”
+compared to the operations defined in the MyMap interface?
+
+StudentMap
+Best case, when the tree is balanced, the operations put, get and delete will have time complexity of
+O(log n) - the array-part of the Studentmat is a constant. When dealing with a small dataset it will be slower than. But when dealing with a large data set it will outperform Arraylist and Binary Tree
+
+Hashmap will always have time complexity of O(1), will always outperform.
+
+
+worst case, when the tree is unbalanced, it will a time complexity of O(n).
+It will perform same as ArrayList and Binary tree.
+2
+ \
+  3
+   \
+    4
+
+
+The performance of the method "getByName" will have time complexity of O(n) as perform a linear scan in the search for node with matching name.
